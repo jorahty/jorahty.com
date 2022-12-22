@@ -1,0 +1,33 @@
+a {
+  text-decoration: none;
+}
+
+.anchor, .post-content a {
+  color: #08f;
+  transition: color 0.2s ease-out;
+}
+
+.anchor:hover, .post-content a:hover {
+  color: #0088ffcc;
+}
+
+.post-content > p {
+  opacity: 0.8;
+}
+
+.post-content pre {
+  background: #1f2937;
+  color: #fff;
+  padding: 8px;
+  border-radius: 10px;
+  font-size: 18px;
+  overflow: scroll;
+}
+
+.post-content > p > code {
+  background: #77777733;
+  padding: 4px 7px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-family: 'SF Mono';
+}
