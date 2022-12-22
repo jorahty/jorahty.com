@@ -3,7 +3,6 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Link from 'next/link';
 import { PostData } from '../lib/types';
-import { ReactElement, JSXElementConstructor, ReactFragment, ReactPortal, Key } from 'react';
 
 type Props = {
   allPostsData: PostData[];

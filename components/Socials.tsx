@@ -42,8 +42,8 @@ export default function SocialMedia() {
       justifyContent: 'space-between',
       '& img': {
         width: {
-          mobile: '15vw',
-          desktop: 'min(8vw, 80px)',
+          xs: '15vw',
+          sm: 'min(8vw, 80px)',
         }
       }
     }}>

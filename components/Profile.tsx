@@ -10,13 +10,13 @@ export default function Profile() {
   return (
     <Box sx={{
       display: {
-        mobile: 'block',
-        desktop: 'flex',
+        xs: 'block',
+        sm: 'flex',
       },
       '& > *': {
         width: {
-          mobile: '100%',
-          desktop: '50%',
+          xs: '100%',
+          sm: '50%',
         },
       },
       gap: 3,

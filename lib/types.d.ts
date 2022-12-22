@@ -2,6 +2,7 @@ export type Frontmatter = {
   title: string;
   date: string;
   description: string;
+  tags: array;
 };
 
 export type PostData = {

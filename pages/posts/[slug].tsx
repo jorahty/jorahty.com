@@ -21,7 +21,7 @@ export default function BlogPost({ code, frontmatter }: Props) {
         <Box>
           <Typography variant="h4">{frontmatter.title}</Typography>
           <Box sx={{display: 'flex', gap: 1 }}>
-            {frontmatter.tags && frontmatter.tags.map((tag, i) => (
+            {frontmatter.tags && frontmatter.tags.map((tag: string, i: number) => (
               <Box key={i} sx={{
                 p: '4px 14px',
                 background: '#88888833',

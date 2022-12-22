@@ -1,5 +1,5 @@
 import { useTheme } from '@mui/material/styles';
-import { useState, useEffect, useContext } from 'react';
+import { useContext } from 'react';
 import { ColorModeContext } from '../pages/_app';
 import Button from '@mui/material/Button';
 import Brightness4Icon from '@mui/icons-material/Brightness4';
