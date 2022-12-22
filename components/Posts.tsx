@@ -3,6 +3,7 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Link from 'next/link';
 import { PostData } from '../lib/types';
+import { ReactElement, JSXElementConstructor, ReactFragment, ReactPortal, Key } from 'react';
 
 type Props = {
   allPostsData: PostData[];
@@ -42,8 +43,8 @@ export default function Posts({ allPostsData }: Props) {
             <Box>
               <Typography variant="h5">{title}</Typography>
               <Box sx={{display: 'flex', gap: 1 }}>
-                {tags && tags.map((tag, i) => (
-                  <Box key={i} sx={{
+                {tags && tags.map((tag: string, i: Number) => (
+                  <Box key={i.toString()} sx={{
                     p: '4px 14px',
                     background: '#88888833',
                     borderRadius: 8,
