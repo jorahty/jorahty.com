@@ -9,6 +9,7 @@ export type PostData = {
   date: string;
   description: string;
   slug: string;
+  tagas: array;
 };
 
 export type Repository = {
