@@ -5,6 +5,7 @@ import Box from '@mui/joy/Box';
 import Link from '@mui/joy/Link';
 import Image from 'next/image';
 import ModeToggle from '@/components/ModeToggle';
+import { GlobalStyles } from '@mui/joy';
 
 export default function MyApp() {
   return (
@@ -52,8 +53,17 @@ export default function MyApp() {
                 University of California, Santa Cruz
               </Link>
             </Typography>
-            <Button>
-              jtennant@ucsc.edu
+            <GlobalStyles styles={{
+              '.protected:hover': {
+                'unicode-bidi': 'bidi-override',
+                'direction': 'rtl',
+                'cursor': 'not-allowed',
+                'user-select': 'none',
+                'background': 'var(--joy-palette-primary-solidBg) !important'
+              },
+            }} />
+            <Button className='protected'>
+              ude.cscu@tnannetj
             </Button>
           </Stack>
 
