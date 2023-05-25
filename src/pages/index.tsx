@@ -9,9 +9,7 @@ import ModeToggle from '@/components/ModeToggle';
 export default function MyApp() {
   return (
     <Stack gap={3} padding={3} margin="auto" maxWidth={900}>
-      <Stack alignItems="end">
-        <ModeToggle />
-      </Stack>
+      <ModeToggle />
       <Stack gap={3} sx={{
         flexDirection: {
           sm: 'row'
@@ -39,10 +37,10 @@ export default function MyApp() {
           gap={6}
         >
           <Box>
-            <Typography level='h2'>
+            <Typography level="h2">
               James Tennant
             </Typography>
-            <Typography level="body2">
+            <Typography level="h6" textColor="neutral.500">
               @jorahty
             </Typography>
           </Box>
