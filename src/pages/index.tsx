@@ -62,7 +62,7 @@ export default function MyApp() {
           <Stack direction="row">
             {
               [1,2,3,4].map(letter => (
-                <Box>
+                <Box key={letter}>
                   {letter}
                 </Box>
               ))
