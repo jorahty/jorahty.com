@@ -6,6 +6,7 @@ import Link from '@mui/joy/Link';
 import Image from 'next/image';
 import ModeToggle from '@/components/ModeToggle';
 import { GlobalStyles } from '@mui/joy';
+import Socials from '@/components/Socials';
 
 export default function MyApp() {
   return (
@@ -26,6 +27,7 @@ export default function MyApp() {
             alt="Portrait"
             width="2316"
             height="3088"
+            priority
             style={{
               width: '100%',
               height: 'auto',
@@ -55,11 +57,11 @@ export default function MyApp() {
             </Typography>
             <GlobalStyles styles={{
               '.protected:hover': {
-                'unicode-bidi': 'bidi-override',
-                'direction': 'rtl',
-                'cursor': 'not-allowed',
-                'user-select': 'none',
-                'background': 'var(--joy-palette-primary-solidBg) !important'
+                unicodeBidi: 'bidi-override',
+                direction: 'rtl',
+                cursor: 'not-allowed',
+                userSelect: 'none',
+                background: 'var(--joy-palette-primary-solidBg) !important'
               },
             }} />
             <Button className='protected'>
@@ -67,16 +69,7 @@ export default function MyApp() {
             </Button>
           </Stack>
 
-          <Stack direction="row">
-            {
-              [1,2,3,4].map(letter => (
-                <Box key={letter}>
-                  {letter}
-                </Box>
-              ))
-            }
-          </Stack>
-
+          <Socials />
         </Stack>
       </Stack>
       <Button>

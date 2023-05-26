@@ -13,7 +13,7 @@ export default function ModeToggle() {
     setMounted(true);
   }, []);
 
-  if (!mounted) return <Button size="sm" variant="plain"></Button>;
+  if (!mounted) return <></>;
 
   if (systemMode) mode = systemMode;
 
