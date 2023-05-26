@@ -14,12 +14,17 @@ const socials = {
 };
 
 export default function Socials() {
-  const { mode } = useColorScheme();
+  let { mode, systemMode, setMode } = useColorScheme();
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
     setMounted(true);
   }, []);
+
+  if (mode === 'system' || systemMode) {
+    mode = systemMode;
+    setMode(systemMode || null);
+  }
 
   return (
     <Stack direction="row" justifyContent="space-between">

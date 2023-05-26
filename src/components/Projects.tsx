@@ -4,7 +4,7 @@ import { useColorScheme } from '@mui/joy/styles';
 import { useEffect, useState } from "react";
 
 export default function Projects() {
-  const { mode, systemMode } = useColorScheme();
+  const { mode, systemMode, setMode } = useColorScheme();
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -15,7 +15,9 @@ export default function Projects() {
 
   return (
     <Box>
-      <Button>
+      <Button
+        onClick={() => setMode('system')}
+      >
         Hello, Projects!
       </Button>
       <Button>
