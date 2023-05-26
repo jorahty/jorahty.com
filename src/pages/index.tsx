@@ -7,6 +7,7 @@ import Image from 'next/image';
 import ModeToggle from '@/components/ModeToggle';
 import Socials from '@/components/Socials';
 import Email from '@/components/Email';
+import Projects from '@/components/Projects';
 
 export default function MyApp() {
   return (
@@ -66,9 +67,7 @@ export default function MyApp() {
           <Socials />
         </Stack>
       </Stack>
-      <Button>
-        Hello, Projects!
-      </Button>
+      <Projects />
     </Stack>
   );
 }
