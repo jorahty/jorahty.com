@@ -22,21 +22,28 @@ export default function Socials() {
   }, []);
 
   return (
-    <Stack direction="row">
+    <Stack direction="row" justifyContent="space-between">
       {Object.entries(socials).map(([k, v]) => (
-        <Tooltip key={k} title={k} placement="top">
-          <Link href={v}>
-            {false ? (<></>) : <Image
-              src={`/socials/${k}.svg`}
-              width={30}
-              height={30}
-              alt={k}
-              style={
-                (k === 'GitHub' && mode === 'dark' && mounted) ? {
-                  filter: 'invert(1)',
-                } : undefined
+        <Tooltip key={k} title={k} arrow placement="top">
+          <Link
+            href={v}
+            sx={{
+              '& img': {
+                filter: `invert(${(k === 'GitHub' && mode === 'dark' && mounted) ? '1' : '0'})`,
+                width: {
+                  sm: "min(7.7vw, 70px)",
+                  xs: "15vw",
+                },
+                height: 'auto',
               }
-            />}
+            }}
+          >
+            <Image
+              src={`/socials/${k}.svg`}
+              width={200}
+              height={200}
+              alt={k}
+            />
           </Link>
         </Tooltip>
       ))}

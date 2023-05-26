@@ -36,6 +36,11 @@ export default function MyApp() {
           />
         </Box>
         <Stack
+          sx={{
+            width: {
+              sm: '50%',
+            }
+          }}
           justifyContent="space-between"
           gap={6}
         >
