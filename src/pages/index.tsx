@@ -67,7 +67,7 @@ export default function MyApp() {
           <Socials />
         </Stack>
       </Stack>
-      <Projects />
+      {/* <Projects /> */}
     </Stack>
   );
 }
