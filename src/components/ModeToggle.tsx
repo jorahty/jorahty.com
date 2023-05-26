@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useColorScheme } from '@mui/joy/styles';
 import Button from '@mui/joy/Button';
-import Box from '@mui/joy/Box';
 import DarkMode from '@mui/icons-material/DarkModeRounded';
 import LightMode from '@mui/icons-material/LightModeRounded';
 
@@ -21,7 +20,6 @@ export default function ModeToggle() {
     <Button
       onClick={() => setMode(mode === 'dark' ? 'light' : 'dark')}
       sx={{
-        display: "block",
         width: 50,
         height: 50,
         position: 'absolute',
