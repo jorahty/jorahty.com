@@ -11,13 +11,5 @@ export default function Projects() {
 
   if (!mounted) return <></>;
 
-  return (
-    <Box>
-      <Typography>
-        <Link href="https://jorah-ty.web.app/">
-          My old website
-        </Link>
-      </Typography>
-    </Box>
-  );
+  return <Box></Box>;
 }
